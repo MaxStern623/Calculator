@@ -1,0 +1,59 @@
+# ===== Python bytecode =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== C extensions =====
+*.so
+
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging
+build/
+# Windows (just in case)
+*.egg-info/
+.eggs/
+
+# Unit test / coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+venv/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+
+# Emacs
+#*#
+.#*
+
+# Linux
+core
+
