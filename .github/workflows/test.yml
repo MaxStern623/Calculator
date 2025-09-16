@@ -1,0 +1,25 @@
+    name: Run Tests on Push
+
+    on:
+      push:
+        branches:
+          - main # Or your default branch, e.g., master, develop
+
+    jobs:
+      test:
+        runs-on: ubuntu-latest # Or another suitable runner environment like windows-latest, macos-latest
+
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v4 # Action to check out your repository code
+
+          - name: Set up Node.js
+            uses: actions/setup-node@v4
+            with:
+              node-version: '20' # Specify your Node.js version, or other language setup action
+
+          - name: Install dependencies
+            run: npm ci # Or yarn install, pip install, etc.
+
+          - name: Run tests
+            run: npm test # Or your specific test command, e.g., yarn test, pytest
